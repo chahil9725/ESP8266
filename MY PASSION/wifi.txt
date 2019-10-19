@@ -1,0 +1,2 @@
+http://10.1.1.1/setting?ssid=Shreeji&pass=8866551417Cc&token=1234567890
+http://10.1.1.1/ac?power=1&fan=3&mode=1&temp=22&turbo=0&light=1&push=1

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+<code><center><font size="20" color="#436a8e">IoT Dashboard</center></code></font>
+
+<br>
+<code><center><font size="5" color="#35266d">By Chahil Patel</center></code></font>
+<br>
+<br>
+
+
+
+
+<style>
+.button1 {
+    background-color: #2a9317; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.button2 {
+    background-color: #f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: #2a9317; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button4 {
+    background-color: #f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button5 {
+    background-color: #2a9317; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button6 {
+    background-color: #f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button7 {
+    background-color: #2a9317; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button8 {
+    background-color: #f44336;  /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+
+
+
+
+
+<body>
+<center><button class="button1" type="submit" onclick="UserAction1()">Relay 1 ON</button>
+<button class="button2" type="submit" onclick="UserAction2()">Relay 1 OFF</button></center>
+<br>
+<center>
+<button class="button3" type="submit" onclick="UserAction3()">Relay 2 ON</button>
+<button class="button4" type="submit" onclick="UserAction4()">Relay 2 OFF</button>
+</center>
+<br>
+<center>
+<button class="button5" type="submit" onclick="UserAction5()">Relay 3 ON</button>
+<button class="button6" type="submit" onclick="UserAction6()">Relay 3 OFF</button>
+</center>
+<br>
+<center>
+<button class="button7" type="submit" onclick="UserAction7()">Relay 4 ON</button>
+<button class="button8" type="submit" onclick="UserAction8()">Relay 4 OFF</button>
+</center>
+
+
+<br>
+<br>
+
+<br>
+<br>
+
+<code><center><font size="5" color="#35266d">This Project is Fully Managed By Chahil Patel</center></code></font>
+
+
+
+
+
+<p><center><span size="5" color="#35266d">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #333333;"></span></span><br /> &nbsp;<br /> <br /> <img src="http://www.xinoe.com/wp-content/uploads/2016/07/IOT_Final-Logo-version2.png" alt="" width="622" height="355" /><br /> <code><code></code></code></p>
+</center>
+<p>
+</body>
+
+</html>
+<script type="text/javascript" language="javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function UserAction1() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://cloud.arest.io/chahil/digital/1/1", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
+function UserAction2() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://cloud.arest.io/chahil/digital/1/0", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
+function UserAction3() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://cloud.arest.io/chahil/digital/2/1", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
+function UserAction4() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://cloud.arest.io/chahil/digital/2/0", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
+function UserAction5() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://cloud.arest.io/chahil/digital/3/1", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
+function UserAction6() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://cloud.arest.io/chahil/digital/3/0", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
+function UserAction7() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://cloud.arest.io/chahil/digital/4/1", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
+function UserAction8() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "https://cloud.arest.io/chahil/digital/4/0", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
+</script>

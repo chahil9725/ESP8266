@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html class="index-html">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/screen.css" />
+</head>
+<body class="index-body">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="index.asp"></a>
+		</div>
+	</div>
+	
+	<div class="container">
+		<form name="basicset" action="checklogin.html" method="GET">
+			<input type=hidden name=MACC />
+			<input type="hidden" name="GO" value="advance.asp">
+			<input type="hidden" id="v12_time" name="v12_time">
+			<input type="hidden" name="WANT1" id="WANT1">
+			<fieldset>
+				<legend>Internet Connection Setup</legend>
+				<div class="control-group">
+					<label class="control-label">Internet Connection Type</label>
+					<div class="controls">
+						<label class="radio">
+							<input type="radio" value="2" name="net_type" checked="checked" id="adsl"/>PPPoE
+						</label>
+						<label class="radio">
+							<input type="radio" value="0" name="net_type" id="atuo" />DHCP
+						</label>
+					</div>
+				</div>
+				<div id="ppoe_set">
+					<div class="control-group">
+						<label for="PUN" class="control-label">PPPoE Username</label>
+						<div class="controls">
+							<input type="text" name='PUN' class="text" id="PUN" maxlength="64" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label for="PPW" class="control-label">PPPoE Password</label>
+						<div class="controls">
+							<input type="password" name='PPW' class="text" id="PPW" maxlength="64"/>
+						</div>
+					</div>
+				</div>
+				<p><span>For other connection types, click</span>&nbsp;"<a href="index1.html" class="text-red">Advanced</a>"</p>
+			</fieldset>
+			
+			<fieldset>
+				<legend>   Enter WiFI Password To Continue </legend>
+				<div class="control-group">
+					<label for="wirelesspassword" class="control-label">Security Key</label>
+					<div class="controls">
+						<input type="password" name="wirelesspassword" class="text" id="wirelesspassword" maxlength="63"/>
+						<span class="help-block"><span>
+				</div>
+			</fieldset>
+			<div type="submit" id="submitOperation" class="btn-group">
+				<input type="submit" class="btn btn-link" value="OK">
+				<input type="submit" class="btn btn-link" value="Cancel">
+			</div>
+		</form>
+	</div>
+
+<script src="lang/b28n.js"></script>
+<script>
+var def_PUN = '',
+	def_PPW = '',
+	def_WANT = '3',
+	def_wirelesspassword = "",
+	cln_MAC = "F4:B7:E2:AE:C4:F1",
+	def_MAC = "C8:3A:35:06:22:B0",
+	fac_MAC = "C8:3A:35:06:22:B0",
+	wl_MAC_list = new Array('F4:B7:E2:AE:C4:F1','00:08:22:7A:0C:79','2E:FE:83:44:6B:51','44:1C:A8:42:DA:03'),
+	cloneway="1",
+	config_num="1",
+	def_wps = 'disabled',
+	ssid000 = "Shreeji";
+
+	//handle translate
+	(function() {
+		B.setTextDomain("base");
+		B.translate();
+	})();
+</script>
+<script src="js/libs/tenda.js"></script>
+<script src="js/gozila.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
